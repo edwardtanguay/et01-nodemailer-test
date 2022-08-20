@@ -6,14 +6,14 @@ dotenv.config();
 var transporter = createTransport({
 	service: 'gmail',
 	auth: {
-		user: 'edwardappmailer234',
+		user: 'gmailAccountName',
 		pass: process.env.PASSWORD,
 	},
 });
 
 var mailOptions = {
-	from: 'Language Community Site <edwardappmailer234@gmail.com>',
-	to: 'edwardtanguay@gmail.com',
+	from: 'Language Community Site <gmailAccountName@gmail.com>',
+	to: 'recipient@xyzcompany.com',
 	subject: 'Please confirm your registration',
 	html: `
 <h1>Please confirm your registration</h1>	
